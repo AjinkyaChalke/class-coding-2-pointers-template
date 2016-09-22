@@ -4,7 +4,6 @@
  * http://www.tutorialspoint.com/cplusplus/cpp_pointers.htm
  */
 #include <iostream>
-#include <ctime>
 
 #define MAX 3
 using namespace std;
@@ -37,25 +36,29 @@ namespace example2 {
     void example() {
         //pointers basic 2
         //TODO 2 - create a integer variable var holding some value
+        int var = 10;
+
         //TODO 2 - create a pointer of type int
+        int *ip;
 
         //TODO 2 - store address of var into pointer
+        ip = &var;
 
         //TODO 2
-        cout << "Value of var variable: ";
+        cout << "Value of var variable: " << var <<"\n";
 
         //TODO 2 // print the address stored in ip pointer variable
-        cout << "Address stored in ip variable: ";
+        cout << "Address stored in ip variable: " << ip <<"\n";
 
         //TODO 2// access the value at the address available in pointer
-        cout << "Value of *ip variable: ";
+        cout << "Value of *ip variable: " << *ip <<"\n";
 
         //TODO 2
-        cout << "Address of *ip variable: ";
+        cout << "Address of *ip variable: " << &(ip) <<"\n";
 
         //TODO 2 - set the pointer to null pointer
-
-        cout << "The value of ptr is ";
+        ip = NULL;
+        cout << "The value of ptr is " << ip <<"\n";
     }
 }
 
@@ -87,24 +90,19 @@ namespace example4 {
         //pointer subtraction
 
         //TODO 4 - integer array of size MAX
-        int arr[MAX] = {1, 2, 3};
         //TODO 4 - integer pointer
-        int * p;
 
         //TODO 4// let us have address of the last element in pointer.
-        p = &(arr[MAX-1]);
 
         for (int i = MAX; i > 0; i--) {
             //TODO 4
-            cout << "Address of var[" << i << "] = " << p << "\n";
+            cout << "Address of var[" << i << "] = ";
 
             //TODO 4
-            cout << "Value of var[" << i << "] = " << *p << "\n";
+            cout << "Value of var[" << i << "] = ";
 
             //TODO 4
             // point to the previous location
-            p -= 1;
-
         }
     }
 }
@@ -310,9 +308,9 @@ namespace example13 {
 int main() {
 
     //example1::example();
-    //example2::example();
+    example2::example();
     //example3::example();
-    example4::example();
+    //example4::example();
     //example5::example();
     //example6::example();
     //example7::example();
