@@ -4,6 +4,7 @@
  * http://www.tutorialspoint.com/cplusplus/cpp_pointers.htm
  */
 #include <iostream>
+#include <ctime>
 
 #define MAX 3
 using namespace std;
@@ -203,6 +204,7 @@ namespace example10 {
         int var;
         int *ptr;
         //TODO 10 - create a pointer to pointer
+        int **pptr;
 
 
         var = 3000;
@@ -211,12 +213,13 @@ namespace example10 {
         ptr = &var;
 
         //TODO 10// take the address of ptr using address of operator &
+        pptr = &ptr;
 
         // take the value using pptr
         cout << "Value of var :" << var << endl;
         cout << "Value available at *ptr :" << *ptr << endl;
         //TODO 10
-        cout << "Value available at **pptr :";
+        cout << "Value available at **pptr :" << **pptr;
 
     }
 }
@@ -314,7 +317,7 @@ namespace example13 {
 int main() {
 
     //example1::example();
-    example2::example();
+    //example2::example();
     //example3::example();
     //example4::example();
     //example5::example();
@@ -322,7 +325,7 @@ int main() {
     //example7::example();
     //example8::example();
     //example9::example();
-    //example10::example();
+    example10::example();
     //example11::example();
     //example12::example();
     //example13::example();
