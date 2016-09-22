@@ -120,20 +120,24 @@ namespace example5 {
         //comparing pointers
 
         //TODO 5 - integer array of size MAX
+        int array[MAX] = {1, 2, 3};
         //TODO 5 - integer pointer
+        int * ptr;
 
         //TODO 5// let us have address of the first element in pointer.
+        ptr=array;
         int i = 0;
         //TODO 5 iterate from &variable[MAX-1] to ptr
-        while (42) {
+        while (ptr<=&array[MAX-1]) {
 
             //TODO 5
-            cout << "Address of var[" << i << "] = ";
+            cout << "Address of var[" << i << "] = "<<ptr<<"\n";
 
             //TODO 5
-            cout << "Value of var[" << i << "] = ";
+            cout << "Value of var[" << i << "] = "<<*ptr<<"\n";
 
             //TODO 5// point to the next location
+            ptr++;
 
             i++;
         }
@@ -223,7 +227,7 @@ namespace example10 {
         cout << "Value of var :" << var << endl;
         cout << "Value available at *ptr :" << *ptr << endl;
         //TODO 10
-        cout << "Value available at **pptr :" << **pptr;
+        cout << "Value available at **pptr :" << **pptr<<endl;
 
     }
 }
@@ -327,7 +331,7 @@ int main() {
     //example5::example();
     //example6::example();
     //example7::example();
-    example8::example();
+    //example8::example();
     //example9::example();
     //example10::example();
     //example11::example();
