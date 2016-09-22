@@ -324,19 +324,19 @@ namespace example13 {
 
 int main() {
 
-    //example1::example();
-    //example2::example();
-    //example3::example();
-    //example4::example();
-    //example5::example();
-    //example6::example();
-    //example7::example();
-    //example8::example();
-    //example9::example();
-    //example10::example();
-    //example11::example();
-    //example12::example();
-    //example13::example();
+    example1::example();
+    example2::example();
+    example3::example();
+    example4::example();
+    example5::example();
+    example6::example();
+    example7::example();
+    example8::example();
+    example9::example();
+    example10::example();
+    example11::example();
+    example12::example();
+    example13::example();
 
 
     return 0;
