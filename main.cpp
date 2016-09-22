@@ -173,13 +173,17 @@ namespace example8 {
         //array of pointers
         int var[MAX] = {10, 100, 200};
         //TODO 8 define an integer pointer of size MAX
+        int * ptr = new int[MAX];
 
         for (int i = 0; i < MAX; i++) {
             //TODO 8// assign the address of integer.
+            ptr = &var[i];
+            ptr++;
         }
+        ptr-=MAX;
         for (int i = 0; i < MAX; i++) {
             //TODO 8
-            cout << "Value of var[" << i << "] = ";
+            cout << "Value of var[" << i << "] = " << *(ptr++) << "\n";
         }
     }
 }
@@ -190,10 +194,10 @@ namespace example9 {
         //array of names
 
         //TODO 9 - create a character pointer array of size MAX
-
+        char * ptr = new char[MAX] {'a', 'b', 'c'};
         for (int i = 0; i < MAX; i++) {
             //TODO 9
-            cout << "Value of names[" << i << "] = ";
+            cout << "Value of names[" << i << "] = " << ptr[i] << "\n";
 
         }
     }
@@ -323,9 +327,9 @@ int main() {
     //example5::example();
     //example6::example();
     //example7::example();
-    //example8::example();
+    example8::example();
     //example9::example();
-    example10::example();
+    //example10::example();
     //example11::example();
     //example12::example();
     //example13::example();
