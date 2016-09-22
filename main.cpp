@@ -227,7 +227,7 @@ namespace example10 {
         cout << "Value of var :" << var << endl;
         cout << "Value available at *ptr :" << *ptr << endl;
         //TODO 10
-        cout << "Value available at **pptr :" << **pptr<<endl;
+        cout << "Value available at **pptr :" << **pptr;
 
     }
 }
@@ -331,7 +331,7 @@ int main() {
     //example5::example();
     //example6::example();
     //example7::example();
-    //example8::example();
+    example8::example();
     //example9::example();
     //example10::example();
     //example11::example();
